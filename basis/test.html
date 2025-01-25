@@ -1,45 +1,19 @@
-<basis core="dbsource" name="db" source="basiscore" lid="2" mid="5" usedforid="9664"> 
-    <member name="contactus" type="view"/> 
-</basis>	
-<basis core="dbsource" name="db" source="basiscore" lid="2" mid="5" usedforid="9664"> 
-    <member name="social" type="view" postsql="select * from [db.social] where TypeID=245"/> 
-</basis>	
-<basis core="dbsource" name="db" source="basiscore" lid="2" mid="5" usedforid="9664"> 
-    <member name="phone" type="view" postsql="select * from [db.phone] where TypeID=240"/> 
-</basis>	
-
-   <footer class="mobile-footer w-full pb-[2em] pt-[2em] flex justify-center items-center bg-black">
-    <div class="Box w-90p flex-col flex justify-start items-center mx-auto gap-[1.2em]">
-       <div class="top w-full flex flex-col justify-start items-start ">
-        <div class="row blackSec w-full flex justify-start items-start">
-            <span class="text font-Montserrat700 font-bold text-[38px] leading-[46.32px] text-White">
-              On
-            </span>
-        </div>
-        <div class="row blackSec w-auto flex justify-start items-start">
-            <span class="text font-Montserrat700 font-bold text-[38px] leading-[46.32px] text-White">
-             The
-            </span>
-        </div>
-        <div class="row blackSec w-auto flex justify-start items-start">
-            <span class="text font-Montserrat700 font-bold text-[38px] leading-[46.32px] text-White">
-              Hrizon...
-            </span>
-        </div>
-       
-       </div>
-       <div class="bottom w-full flex flex-col justify-start items-start">
-        <div class="Socials  w-full flex flex-col gap-[.8em] justify-start items-start">
+<footer class="w-full h-full flex justify-center items-center bg-black">
+    <div class="Box w-auto flex justify-start items-center mr-auto ml-[11em] gap-[1.2em]">
+       <div class="Left w-auto flex flex-col justify-start items-start translate-y-[3px]">
+           <div class="Socials w-auto flex flex-col gap-[1.1em] justify-start items-end">
             <basis core="print" datamembername="db.contactus">
                 <layout>
                     @child
                 </layout>
                 <face filter="TypeID=144">
-                    <a href="@largetext"  alt="SURVEY" title="SURVEY" aria-label="SURVEY" rel="noopener"
-                     class="social blackSec w-auto flex justify-start items-center gap-[.4em]">
-               
-                <span class="icon w-[22px] h-[22px] flex justify-center items-center">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a href="@largetext"  alt="SURVEY" title="SURVEY" aria-label="SURVEY" rel="noopener" class="social SURVEY w-auto flex justify-start items-center gap-[1.4em]">
+                        <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-2xl leading-[29.26px] text-White">
+                            SURVEY
+                        </span>
+                        <span class="icon w-[50px] h-[50px] flex justify-center items-center">
+                       <!-- <img src="[##cms.cms.cdn##]/images/survi.png" alt="SURVEY" title="SURVEY"> -->
+                       <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g clip-path="url(#clip0_22_97)">
                         <rect width="50" height="50" fill="black"/>
                         <mask id="mask0_22_97" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-4" y="0" width="55" height="55">
@@ -60,11 +34,9 @@
                         </defs>
                         </svg>
                         
-                </span>
-                <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-[11px] leading-[13.41px] text-White">
-                    SURVEY
-                </span>
-            </a>
+                        </span>
+                     
+                     </a>
                 </face>
             </basis>
             <basis core="print" datamembername="db.social">
@@ -72,15 +44,14 @@
                     @child
                 </layout>
                 <face filter="RowNumber=1">
-                    <a href="@largetext"  alt="instagram" title="instagram" aria-label="instagram" rel="noopener" class="instagram social blackSec w-auto flex justify-start items-center gap-[.4em]">
-         
-                <span class="icon w-[22px] h-[22px] flex justify-center items-center">
-                    <img src="[##cms.cms.cdn##]/images/instagram.png" alt="instagram" title="instagram">
-                </span>
-                <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-[11px] leading-[13.41px] text-White">
-                    INSTAGRAM
-                </span>
-            </a>
+                    <a href="@largetext"  alt="instagram" title="instagram" aria-label="instagram" rel="noopener" class="social instagram w-auto flex justify-start items-center gap-[1.4em]">
+                        <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-2xl leading-[29.26px] text-White">
+                            INSTAGRAM
+                        </span>
+                        <span class="icon w-[50px] h-[50px] flex justify-center items-center">
+                        <img src="[##cms.cms.cdn##]/images/instagram.png" alt="instagram" title="instagram">
+                        </span>
+                     </a>
                 </face>
             </basis>
             <basis core="print" datamembername="db.social">
@@ -88,59 +59,69 @@
                     @child
                 </layout>
                 <face filter="RowNumber=2">
-                    <a href="@largetext"  alt="whatsapp" title="whatsapp" aria-label="whatsapp" rel="noopener" 
-                    class="social blackSec w-auto flex justify-start items-center gap-[.4em]">
-             
-                <span class="icon w-[22px] h-[22px] flex justify-center items-center">
-                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.5833 6.3909C34.5212 3.3412 30.6266 1.26442 26.3885 0.421356C22.1504 -0.421709 17.7577 0.00651455 13.7621 1.65226C9.7665 3.298 6.34602 6.0879 3.93018 9.67163C1.51434 13.2554 0.210835 17.4732 0.183333 21.7955C0.183719 25.6198 1.19032 29.3767 3.102 32.6887L0 44.0001L11.6087 40.9632C14.9392 42.7744 18.6823 43.6907 22.4726 43.6226C26.2629 43.5546 29.9707 42.5045 33.2341 40.5748C36.4974 38.6452 39.2048 35.902 41.0917 32.6131C42.9787 29.3243 43.9807 25.6021 44 21.8101C44.0062 18.9428 43.4421 16.1028 42.3404 13.4556C41.2388 10.8084 39.6217 8.40692 37.5833 6.3909ZM22.088 39.9289C18.8226 39.9275 15.6169 39.0538 12.8022 37.3981L12.1385 37.002L5.23967 38.8065L7.073 32.1165L6.63117 31.4343C4.27828 27.6432 3.40104 23.1191 4.1664 18.723C4.93176 14.3269 7.28629 10.3658 10.7819 7.59349C14.2774 4.82121 18.67 3.43134 23.1235 3.68842C27.577 3.9455 31.7806 5.83158 34.9342 8.98767C37.4778 11.5216 39.211 14.7548 39.9133 18.2764C40.6157 21.798 40.2555 25.4489 38.8787 28.7652C37.5018 32.0816 35.1703 34.9136 32.1806 36.9014C29.1909 38.8891 25.6779 39.9429 22.088 39.9289ZM32.0833 26.3728C31.5333 26.1088 28.8347 24.7884 28.347 24.5903C27.8593 24.3922 27.4853 24.3262 27.1095 24.8544C26.7337 25.3825 25.6942 26.6369 25.3843 26.989C25.0745 27.3411 24.7427 27.4071 24.1908 27.1211C22.5764 26.4848 21.0869 25.5685 19.7908 24.4142C18.594 23.3084 17.5656 22.0332 16.7383 20.6291C16.4285 20.079 16.6943 19.7929 16.9803 19.5068C17.2242 19.2647 17.5303 18.8686 17.7998 18.5605C18.0241 18.2867 18.2092 17.983 18.3498 17.6582C18.4208 17.5091 18.454 17.3447 18.4463 17.1796C18.4386 17.0145 18.3904 16.8539 18.3058 16.712C18.1738 16.4479 17.0683 13.7631 16.6247 12.6628C16.1828 11.6065 15.719 11.7458 15.3872 11.7165H14.3275C14.0489 11.7211 13.7744 11.7842 13.5217 11.9017C13.2691 12.0193 13.0439 12.1886 12.8608 12.3987C12.2501 12.9878 11.7669 13.6961 11.4412 14.4797C11.1154 15.2633 10.954 16.1055 10.967 16.954C11.1457 19.0097 11.9219 20.9681 13.2 22.5877C15.5466 26.0992 18.7697 28.9364 22.55 30.8182C23.5642 31.2637 24.6051 31.6458 25.6667 31.9625C26.7841 32.2994 27.964 32.3747 29.1152 32.1826C29.8794 32.0328 30.6038 31.7243 31.2414 31.277C31.879 30.8297 32.4156 30.2536 32.8167 29.5858C33.1894 28.7741 33.2978 27.8657 33.1265 26.989C32.967 26.7469 32.6333 26.6369 32.0833 26.3728Z" fill="white"/>
-                        </svg>
-                        
-                        
-                </span>
-                <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-[11px] leading-[13.41px] text-White">
-                    WHATSAPP
-                </span>
-            </a>
-
+                    <a href="@largetext"  alt="whatsapp" title="whatsapp" aria-label="whatsapp" rel="noopener"  class="whatsapp social w-auto flex justify-start items-center gap-[1.4em]">
+                   <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-2xl leading-[29.26px] text-White">
+                       WHATSAPP
+                   </span>
+                   <span class="icon w-[50px] h-[50px] flex justify-center items-center">
+                       <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M37.5833 6.3909C34.5212 3.3412 30.6266 1.26442 26.3885 0.421356C22.1504 -0.421709 17.7577 0.00651455 13.7621 1.65226C9.7665 3.298 6.34602 6.0879 3.93018 9.67163C1.51434 13.2554 0.210835 17.4732 0.183333 21.7955C0.183719 25.6198 1.19032 29.3767 3.102 32.6887L0 44.0001L11.6087 40.9632C14.9392 42.7744 18.6823 43.6907 22.4726 43.6226C26.2629 43.5546 29.9707 42.5045 33.2341 40.5748C36.4974 38.6452 39.2048 35.902 41.0917 32.6131C42.9787 29.3243 43.9807 25.6021 44 21.8101C44.0062 18.9428 43.4421 16.1028 42.3404 13.4556C41.2388 10.8084 39.6217 8.40692 37.5833 6.3909ZM22.088 39.9289C18.8226 39.9275 15.6169 39.0538 12.8022 37.3981L12.1385 37.002L5.23967 38.8065L7.073 32.1165L6.63117 31.4343C4.27828 27.6432 3.40104 23.1191 4.1664 18.723C4.93176 14.3269 7.28629 10.3658 10.7819 7.59349C14.2774 4.82121 18.67 3.43134 23.1235 3.68842C27.577 3.9455 31.7806 5.83158 34.9342 8.98767C37.4778 11.5216 39.211 14.7548 39.9133 18.2764C40.6157 21.798 40.2555 25.4489 38.8787 28.7652C37.5018 32.0816 35.1703 34.9136 32.1806 36.9014C29.1909 38.8891 25.6779 39.9429 22.088 39.9289ZM32.0833 26.3728C31.5333 26.1088 28.8347 24.7884 28.347 24.5903C27.8593 24.3922 27.4853 24.3262 27.1095 24.8544C26.7337 25.3825 25.6942 26.6369 25.3843 26.989C25.0745 27.3411 24.7427 27.4071 24.1908 27.1211C22.5764 26.4848 21.0869 25.5685 19.7908 24.4142C18.594 23.3084 17.5656 22.0332 16.7383 20.6291C16.4285 20.079 16.6943 19.7929 16.9803 19.5068C17.2242 19.2647 17.5303 18.8686 17.7998 18.5605C18.0241 18.2867 18.2092 17.983 18.3498 17.6582C18.4208 17.5091 18.454 17.3447 18.4463 17.1796C18.4386 17.0145 18.3904 16.8539 18.3058 16.712C18.1738 16.4479 17.0683 13.7631 16.6247 12.6628C16.1828 11.6065 15.719 11.7458 15.3872 11.7165H14.3275C14.0489 11.7211 13.7744 11.7842 13.5217 11.9017C13.2691 12.0193 13.0439 12.1886 12.8608 12.3987C12.2501 12.9878 11.7669 13.6961 11.4412 14.4797C11.1154 15.2633 10.954 16.1055 10.967 16.954C11.1457 19.0097 11.9219 20.9681 13.2 22.5877C15.5466 26.0992 18.7697 28.9364 22.55 30.8182C23.5642 31.2637 24.6051 31.6458 25.6667 31.9625C26.7841 32.2994 27.964 32.3747 29.1152 32.1826C29.8794 32.0328 30.6038 31.7243 31.2414 31.277C31.879 30.8297 32.4156 30.2536 32.8167 29.5858C33.1894 28.7741 33.2978 27.8657 33.1265 26.989C32.967 26.7469 32.6333 26.6369 32.0833 26.3728Z" fill="white"/>
+                           </svg>
+                           
+                           
+                   </span>
+               
+                </a>
                 </face>
             </basis>
-            <basis core="print" datamembername="db.phone">
+               <basis core="print" datamembername="db.phone">
                 <layout>
                     @child
                 </layout>
                 <face filter="RowNumber=1">
-                    <a href="tel:@text"  alt="phone" title="phone" aria-label="phone" rel="noopener" 
-                     class="social blackSec w-auto flex justify-start items-center gap-[.4em]">
-             
-                <span class="icon w-[22px] h-[22px] flex justify-center items-center">
-                    <img src="[##cms.cms.cdn##]/images/phone.png" alt="phone" title="phone">
-                        
-                </span>
-                <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-[11px] leading-[13.41px] text-White">
+               <a href="tel:@text"  alt="phone" title="phone" aria-label="phone" rel="noopener" class="social w-auto flex justify-start items-center gap-[1.4em]">
+                   <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-2xl leading-[29.26px] text-White">
                     @text
-                </span>
-            </a>
+                   </span>
+                   <span class="icon w-[50px] h-[50px] flex justify-center items-center">
+                   <img src="[##cms.cms.cdn##]/images/phone.png" alt="phone" title="phone">
+                   </span>
+                </a>
                 </face>
-            </basis>
-            <span class="social blackSec w-auto flex justify-start items-center gap-[.4em]">
-             
-                <span class="icon w-[22px] h-[22px] flex justify-center items-center">
-                    <img src="[##cms.cms.cdn##]/images/location.png" alt="location" title="location"> 
-                        
-                </span>
+               </basis>
+               <span class="social w-auto flex justify-start items-center gap-[1.4em]">
                 <basis core="print" datamembername="db.contactus">
                     <layout>
                         @child
                     </layout>
                     <face filter="TypeID=244">
-                <span class="text w-auto flex justify-center items-center font-Montserrat300 font-light text-[11px] leading-[13.41px] text-White">
-                    @Answer
-                </span>
+                        <span class="text w-auto max-w-[500px] text-right flex justify-center items-center font-Montserrat300 font-light text-2xl leading-[29.26px] text-White">
+                     @Answer
+                        </span>
                     </face>
                 </basis>
-            </span>
-        </div>
+                <span class="icon w-[50px] h-[50px] flex justify-center items-center">
+                <img src="[##cms.cms.cdn##]/images/location.png" alt="location" title="location">
+                </span>
+               </span>
+           </div>
+       </div>
+       <div class="Right w-auto flex flex-col justify-start items-start">
+           <div class="row w-auto flex justify-start items-start">
+               <span class="text font-Montserrat700 font-bold text-[96px] leading-[135.02px] text-White">
+                 On
+               </span>
+           </div>
+           <div class="row w-auto flex justify-start items-start">
+               <span class="text font-Montserrat700 font-bold text-[96px] leading-[135.02px] text-White">
+               The
+               </span>
+           </div>
+           <div class="row w-auto flex justify-start items-start">
+               <span class="text font-Montserrat700 font-bold text-[96px] leading-[135.02px] text-White">
+                  Horizon...
+               </span>
+           </div>
        </div>
 
     </div>

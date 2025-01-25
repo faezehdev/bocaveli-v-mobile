@@ -1,8 +1,10 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./css/inputDesk.css -o ./css/outputDesk.css --watch"
+    "build": "npx @tailwindcss/cli -i ./css/inputMobile.css -o ./css/outputMobile.css --watch"
   }
+
 }
